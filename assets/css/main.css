@@ -2816,6 +2816,13 @@ textarea:focus::placeholder {
   background: #000;
   color: #fff;
 }
+.bostami-parsonal-info-social-link .upwork {
+  color: #1CAB08;
+}
+.bostami-parsonal-info-social-link .upwork:hover {
+  background: #1CAB08;
+  color: #fff;
+}
 
 .bostami-parsonal-info-social-link li a:hover svg * {
   fill: var(--common-white);
@@ -3004,7 +3011,6 @@ textarea:focus::placeholder {
 }
 .bostami-client-slider-logo {
   padding: 0px 15px;
-  height: 62px;
 }
 
 .bostami-main-menu-wrap {
