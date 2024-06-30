@@ -4,6 +4,11 @@ function changeSection(sectionId) {
     document.getElementById(oldLiSection).classList.remove("active");
     document.getElementById(sectionId).classList.add("active");
     oldLiSection = sectionId;
+
+    document.removeEventListener('scroll', onScroll, true);
+    setTimeout(function () {
+        document.addEventListener('scroll', onScroll, true);
+    }, 1000);
 }
 
 function isInViewport(el) {
@@ -14,14 +19,15 @@ function isInViewport(el) {
     );
 }
 
-
 const aboutDiv = document.getElementById('about');
 const resumeDiv = document.getElementById('resume');
 const workDiv = document.getElementById('work');
 const blogDiv = document.getElementById('blog');
 const contactDiv = document.getElementById('contact');
 
-document.addEventListener('scroll', function () {
+document.addEventListener('scroll', onScroll, true);
+
+function onScroll() {
     if (isInViewport(aboutDiv)) {
         currLiSection = "aboutButtonLi";
     } else if (isInViewport(resumeDiv)) {
@@ -38,4 +44,4 @@ document.addEventListener('scroll', function () {
         document.getElementById(oldLiSection).classList.remove("active");
         oldLiSection = currLiSection;
     }
-}, true);
+}
