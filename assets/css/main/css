@@ -2864,6 +2864,14 @@ input:focus::placeholder, textarea:focus::placeholder {
   background-color: #CA56F2;
 }
 
+.progress-bg-5 {
+  background-color: #d35400;
+}
+
+.progress-bg-6 {
+  background-color: #27ae60;
+}
+
 .knowledeges-item-wrap .gk-item {
   display: inline-block;
   font-size: 16px;
