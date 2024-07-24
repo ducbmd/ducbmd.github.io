@@ -2700,7 +2700,7 @@ textarea:focus::placeholder {
 .bostami-parsonal-info-img {
   width: 240px;
   height: 240px;
-  border-radius: 20px;
+  border-radius: 1000px;
   overflow: hidden;
   margin: auto;
   margin-bottom: 21px;
