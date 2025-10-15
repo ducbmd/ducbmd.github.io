@@ -4929,3 +4929,14 @@ textarea:focus::placeholder {
 .dark-theme .btn-2 {
   color: #fff;
 }
+
+/* Email reveal styling */
+#revealEmail {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#revealEmail:hover {
+  color: var(--theme-primary);
+  text-decoration: underline;
+}
